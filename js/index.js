@@ -16,3 +16,13 @@ function playerSelection(element) {
         }
     }
 }
+
+
+// player Expense calculation 
+document.getElementById("budget-calculate").addEventListener("click", function () {
+    const playerCount = document.getElementById("selected-players").children.length;
+    const budgetInput = document.getElementById("budget-input").value;
+    const playerExpense = playerCount * budgetInput;
+    document.getElementById("player-expense").innerText = playerExpense;
+
+})
