@@ -68,7 +68,7 @@
       </div>
       <div class="col-3 gx-3 text-center header-color p-5">
         <h3>Selected - V</h3>
-        <ol id="selected-players">
+        <ol id="selected-players" class="my-4">
         </ol>
       </div>
       <div class="col-3 gx-3">
@@ -121,18 +121,18 @@
         <p class="">Player Expensess $<span id="player-expense">0</span></p>
         <div class="row align-items-center mt-4">
           <p class="col-6 ">Manager</p>
-          <input class="col-6" type="number">
+          <input id="manager-input" class="col-6" type="number">
         </div>
         <div class="row align-items-center mt-4">
           <p class="col-6 ">Coach</p>
-          <input class="col-6" type="number">
+          <input id="coach-input" class="col-6" type="number">
         </div>
-        <button class="btn btn-primary px-5 py-2 fw-bold my-3 ">Select</button>
+        <button id="total-calculate" class="btn btn-primary px-5 py-2 fw-bold my-3 ">Select</button>
         <div class="d-flex justify-content-between my-4">
           <p>Total</p>
           <div>
             <span class="text-primary">$</span>
-            <span class="text-primary">11000</span>
+            <span id="total-cost" class="text-primary">0</span>
           </div>
         </div>
       </div>

@@ -26,3 +26,11 @@ document.getElementById("budget-calculate").addEventListener("click", function (
     document.getElementById("player-expense").innerText = playerExpense;
 
 })
+document.getElementById("total-calculate").addEventListener("click", function () {
+    const playerExpense = parseFloat(document.getElementById("player-expense").innerText);
+    const managerCost = parseFloat(document.getElementById("manager-input").value);
+    const coachCost = parseFloat(document.getElementById("coach-input").value);
+
+    const totalCost = playerExpense + managerCost + coachCost;
+    document.getElementById("total-cost").innerText = totalCost;
+})
