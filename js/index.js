@@ -1,4 +1,3 @@
-
 function playerSelection(element) {
     // setting clicked button to disabled
     element.setAttribute("disabled", true);
@@ -14,6 +13,7 @@ function playerSelection(element) {
         for (button of buttons) {
             button.setAttribute("disabled", true);
         }
+        document.getElementById("count-error-msg").innerText = "Can't Select More"
     }
 }
 
